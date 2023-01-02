@@ -1,4 +1,4 @@
-package basic;
+
 
 //method 는 소문자로 만들어야한다.
 //method는 클래스안에 들어가야 한다. 

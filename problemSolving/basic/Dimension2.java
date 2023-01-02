@@ -1,4 +1,4 @@
-package basic;
+
 
 public class Dimension2 {
 		public static void main(String[] args) {	
