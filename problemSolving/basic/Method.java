@@ -29,6 +29,8 @@ class Student{
 
 public class Method {
 
+	
+	
 	static int printhi(int a) {
 		System.out.println("Method클래스의 함수");
 		return a; 
@@ -36,12 +38,15 @@ public class Method {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+			
 			Student jj = new Student();
 			System.out.println(jj.getName());
 			 jj.setting("김김김", 187);
 			 System.out.println(jj.getName());
 			 jj.print();
 			 printhi(10);
+			 
+			
 	}
 
 }
