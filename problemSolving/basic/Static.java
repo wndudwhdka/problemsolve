@@ -1,5 +1,7 @@
 // static은 함수만 사용하고 싶을 때 사용하면 좋다. 
 // class이름.함수 사용할 수 있게 해준다
+// static 함수는 인스턴스.맴버 변수에 접근하는것이 아닌 클래스명.맴버 변수로 접근해야 한다. 
+
 class Useofstatic
 {
 	static int plus_static(int a)
