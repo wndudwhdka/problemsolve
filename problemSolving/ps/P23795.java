@@ -13,16 +13,16 @@ public class P23795 {
 				
 				int sum = 0;
 //				int a =0;
-				while(true) {
-					
-					a=Integer.parseInt(br.readLine());
-					
-					if(a==-1){
-						break;
-					}
-					sum =sum+a; 
-					
-				}
+//				while(true) {
+//					
+//					a=Integer.parseInt(br.readLine());
+//					
+//					if(a==-1){
+//						break;
+//					}
+//					sum =sum+a; 
+//					
+//				}
 				System.out.println(sum);
 	}
 

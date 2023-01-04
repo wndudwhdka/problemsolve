@@ -27,7 +27,7 @@ public class P7143 {
 				}
 //				a = Integer.parseInt(br.readLine());
 				
-				System.out.println(a);
+//				System.out.println(a);
 				
 			
 		

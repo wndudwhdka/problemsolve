@@ -8,6 +8,7 @@ abstract class Pet{
 	}
 }
 
+
 class Dog extends Pet{
 	void walk() // 추상클래스에서 생성했던 abstract void walk를 정의 이작업을 오버라이딩이라고 한다. 
 	{
@@ -39,7 +40,9 @@ public class AbstractClass {
 		// TODO Auto-generated method stub
 
 		Dog dog = new Dog();
-		System.out.println(
+		dog.balk();
+		Cat cat = new Cat(); 
+		cat.balk();
 		
 	}
 
