@@ -21,9 +21,23 @@ public class Dp {
 		cnt++; 
 		System.out.println("총 "+cnt+"번");
 		dp[x] = fibo(x-1) + fibo(x-2); 
-		return dp[x]; 
-			
+		return dp[x]; 		
 	}
-	
-
 }
+//public class Dp {// not use DP
+//
+//	static int cnt = 0; 
+//	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		int n = sc.nextInt();
+//		System.out.println(n+"번째의 원소는 "+fibo(n)+"입니다.");
+//		sc.close();
+//	}
+//	static int fibo(int x) {
+//		if(x==1||x==2) return 1; 
+//				cnt++; 
+//		System.out.println("총 "+cnt+"번");
+//	
+//		return 	fibo(x-1) + fibo(x-2); 
+//	}
+//}
