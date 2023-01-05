@@ -1,10 +1,10 @@
 package algorithm;
 
-public class HeapSort {
+public class HeapSort { //root가 가장 큰 값을 가지는 최대힙  
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
+		// 트리를 먼저 최대 힙 구조로 구성 
 		int size = 8; 
 		int[] heap = {6,9,10,4,5,1,12,3};
 		//// 		 6 		초기상태
@@ -29,16 +29,56 @@ public class HeapSort {
 					}
 					System.out.println("i는 "+i+"입니다.");
 				}
-				child =root; //루트를 타고올라간다. 
+				child =root; //부모를 타고 올라가면서 0까지 확인.  
 				
 			}
 			while(child!=0); // 타고올라온 루트가 0이고 child가 그위치에 해당되면 끝. 
 		}
+		
 		for (int i=0;i<size;i++)
 		{
 			System.out.println(heap[i]);
 		}
 		System.out.println(cnt+"만큼 반복되었습니다.");
+		
+		
+	////	      12 		최대힙 상태. 
+	//		   6     10
+	//       4   5  1   9  
+	//		3
+		
+		for(int i=size -1;i>= 0; i--) {
+			int temp = heap[0];
+			heap[0] = heap[i];
+			heap[i] = temp; 
+			int root = 0; 
+			int child = 1; 
+			do { 
+				child = 2 * root +1;
+				
+				
+				if(heap[child]<heap[child+1]&&child<i-1) {
+					child++;
+				}
+				
+				if(heap[root]<heap[child] && child<i) {
+					temp = heap[root];
+					heap[root] = heap[child];
+					heap[child] = temp; 
+				}
+			} while(child <i);
+		}
+		for (int i = 0; i < size; i++) {
+			System.out.println(heap[i]);
+
+	
+	}
+	
+
+		 
+		
+		
+		
 	}
 
 }
