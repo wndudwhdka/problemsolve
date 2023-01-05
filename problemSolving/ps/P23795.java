@@ -24,6 +24,7 @@ public class P23795 {
 //					
 //				}
 				System.out.println(sum);
+				sc.close();
 	}
 
 }

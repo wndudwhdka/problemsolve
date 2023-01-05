@@ -18,7 +18,7 @@ public class SortAscending {
 				System.out.println(arr[i]); 
 			}
 			//Arrays.sort(arr,Collections.reverseOrder());
-			
+			sc.close();
 	}
 
 }
