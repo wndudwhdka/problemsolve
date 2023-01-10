@@ -5,8 +5,25 @@ public class HeapSort { //root가 가장 큰 값을 가지는 최대힙
 	public static void main(String[] args) {
 		
 		// 트리를 먼저 최대 힙 구조로 구성 
-		int size = 8; 
+		
 		int[] heap = {6,9,10,4,5,1,12,3};
+		int size = heap.length; 
+		
+//		for(노드의 갯수만큼 반복) {
+//			int child위치 = 반복인자
+//			do {
+//				int root위치 = (child위치 -1)/2
+//				if(heap[root위치]<heap[child위치]) {
+//					root위치 값과 child위치 값과 맞바꿈
+//					
+//					
+//				}
+//				child위치 = root위치
+//			}
+//			while(child위치가0이 될때까지)
+//		}
+		
+		
 		//// 		 6 		초기상태
 		//		   9   10
 		//       4  5 1  12  
@@ -46,6 +63,14 @@ public class HeapSort { //root가 가장 큰 값을 가지는 최대힙
 	//		   6     10
 	//       4   5  1   9  
 	//		3
+	
+		
+//		for(노드의 개수만큼 반복인자 내려가며 반복) {
+//			
+//		}
+			
+		
+
 		
 		for(int i=size -1;i>= 0; i--) {
 			int temp = heap[0];
