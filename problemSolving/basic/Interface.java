@@ -19,6 +19,7 @@ interface UserBi{
 
 class TestUser implements User,UserHi,UserBi
 {
+	//추상 메소드는 무조건 재 선언되어햐 한다. 
 	String name;
 	public void name (String name)
 	{

@@ -40,13 +40,13 @@ public class P1541 {
 		int[] arr = new int[50];
 		int arrcnt = 0;
 		
-		for(int i=0;i<s.length();i++)
-		{
-			if('0'<=c[i]||c[i]<='9')
-			{
-				arr[arrcnt]
-			}
-		}
+//		for(int i=0;i<s.length();i++)
+//		{
+//			if('0'<=c[i]||c[i]<='9')
+//			{
+//				arr[arrcnt]
+//			}
+//		}
 		
 		
 		br.close();
