@@ -28,25 +28,27 @@ public class P1181 {
 		List<String> listS = new ArrayList<>();
 		String temp; 
 		
-		
+		int cnt=0; 
 		// N번의 입력 받기 
 		for(int i=0;i<N;i++)
 		{	
 			temp = br.readLine();
 			
-			// 중복검사 
+			// 중복검사 해서 중복데이터 원천 배제 
 			if(!listS.contains(temp)){
 				 listS.add(temp);
 			}
-			System.out.println(i);
+			else {
+				cnt++;
+			}
 		}
 		
-		System.out.println("안녕");
-		for(int k=N-1;k>0;k--) {
-			System.out.println("안녕1");
+		N-=cnt;
+		
+		// nlogn 짜리로 해야할듯. 
+		for(int k=(N-1);k>0;k--) {
 			for(int i=0;i<k;i++)
 			{	
-				System.out.println("안녕2");
 				//앞의 단어 길이가 뒤에 꺼보다 크면
 				if(listS.get(i).length()>listS.get(i+1).length())
 				{	
@@ -59,7 +61,7 @@ public class P1181 {
 				else if(listS.get(i).length()==listS.get(i+1).length())
 				{
 				
-				
+					// 사전 순서 정렬 
 					if(listS.get(i).compareTo(listS.get(i+1))>0)
 					{
 						
@@ -73,9 +75,11 @@ public class P1181 {
 			
 			}
 		}
-		
-		System.out.println("결과는");
-		System.out.println(listS.size());
+
+		for(int i=0;i<N;i++)
+		{
+			System.out.println(listS.get(i));
+		}
 		
 		br.close();
 		
