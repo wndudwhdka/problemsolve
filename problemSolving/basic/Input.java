@@ -7,16 +7,22 @@ import java.util.StringTokenizer;
 public class Input {
 
 	public static void main(String[] args) throws IOException { // BufferedReader쓸려면 꼭해야함 throws IOException
-		// TODO Auto-generated method stub
+
+		//
+		// Scanner의 next()는  처리하고 nextLine()한 라인 단위를 기준으로 처리한다.
 		Scanner sc = new Scanner(System.in); 
 		String s1 = sc.next();//ㅁㄴㅇㄹ
 		int i1 = sc.nextInt();//123123
+		
+		// 
 		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); 
 		String s2 = br.readLine();//asdfs 
 		int i2 = Integer.parseInt(br.readLine());//123
 		
 
+		
+		
 
 		
 		StringTokenizer st = new StringTokenizer(br.readLine());//1 2 3
