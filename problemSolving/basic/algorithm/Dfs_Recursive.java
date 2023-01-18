@@ -2,7 +2,7 @@ package algorithm;
 
 // 출처 : https://codingnojam.tistory.com/44
 
-public class Dfs_Reculsive {
+public class Dfs_Recursive {
 
 	static boolean[] visited = new boolean[9]; 
 	
