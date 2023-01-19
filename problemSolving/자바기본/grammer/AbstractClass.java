@@ -1,3 +1,4 @@
+package grammer;
 abstract class Pet{
 	abstract void walk();
 	abstract void balk();

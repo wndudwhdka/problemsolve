@@ -1,3 +1,4 @@
+package grammer;
 
 
 //method 는 소문자로 만들어야한다.

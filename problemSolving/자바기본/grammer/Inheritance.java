@@ -1,3 +1,4 @@
+package grammer;
 class A{
 	String aField = "클래스 A 필드";
 	String aMember = "클래스 A 맴버"; 

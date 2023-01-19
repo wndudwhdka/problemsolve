@@ -1,3 +1,4 @@
+package grammer;
 
 public class Constructor { 
 
@@ -7,7 +8,7 @@ public class Constructor {
 	private int page; 
 	private int price;
 	
-	// 생성자 오버로딩 
+	// 생성자 오버로딩 동일한 이름의 함수가 여러가지 인자를 통해 실행되는 것 
 	// 아무 생성자도 없을 때 실행되는 기본 
 	public Constructor() {}
 	

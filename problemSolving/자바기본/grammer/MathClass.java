@@ -1,3 +1,4 @@
+package grammer;
 import java.util.Random;
 
 public class MathClass{

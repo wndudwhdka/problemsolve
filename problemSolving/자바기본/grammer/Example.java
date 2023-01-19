@@ -1,3 +1,4 @@
+package grammer;
 import java.util.Scanner; 
 
 public class Example {

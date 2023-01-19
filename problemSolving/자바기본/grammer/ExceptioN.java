@@ -1,3 +1,4 @@
+package grammer;
 import java.util.Scanner;
 
 public class ExceptioN {
@@ -43,7 +44,8 @@ public class ExceptioN {
 		
 		
 		catch(Exception e) {
-			e.printStackTrace();  // 이걸 쓰면 편하게 access할 수 있다.	
+			e.printStackTrace();  // 이걸 쓰면 편하게 어떤 error가 발생했는 지를 출력한다. 	
+									
 		}
 		
 	
