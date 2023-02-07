@@ -25,7 +25,7 @@ public class S3_2108 {
 				max=arr[i]; 
 			}
 		}
-		
+		 
 		br.close();
 		Arrays.sort(arr);
 		int middle = arr[(arr.length-1)/2];
