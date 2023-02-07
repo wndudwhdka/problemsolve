@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class S4_2599 {
+public class S4_2599S {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -27,12 +27,14 @@ public class S4_2599 {
 		int max = sum; 
 		for(int i=0;i<n-k;i++)
 		{
-			if(max<(sum-arr[i]+arr[i+k]))
+			
+			sum = sum-arr[i]+arr[i+k];
+			
+			if(max<sum)
 			{
 				max = sum; 
 			}
-			sum = sum-arr[i]+arr[i+k];
-//			System.out.println(sum);
+//			System.out.println("sum ="+sum+" max="+max);
 		}
 		
 		System.out.println(max);
