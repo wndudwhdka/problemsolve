@@ -7,7 +7,14 @@ public class S3_2477 {
 		Scanner sc = new Scanner(System.in);
 		int k = sc.nextInt(); 
 		
-		int[] a = {0,0,0,0}; 
+		int[] a = {0,0,0,0,0};
+		int[] arr = new int[6];
+		int[] length = new int[6]; 
+		for(int i=0;i<6;i++)
+		{
+			arr[i] = sc.nextInt();
+			length[i] = sc.nextInt(); 
+		}
 		
 		
 		sc.close();
